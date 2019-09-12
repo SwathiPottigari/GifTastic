@@ -64,8 +64,8 @@ function createGrid(rownum, colnum, gifArray) {
                 var colDiv = $("<div>");
                 colDiv.addClass("col-md-4 col-sm-4");
                 colDiv.attr("id", colIndex);
-                colDiv.append("<h5>" + gifArray[imgCnt].title + "</h5>");
-                colDiv.append("<h5>" + gifArray[imgCnt].rating + "</h5>");
+                colDiv.append("<h5>" + "Title : " +gifArray[imgCnt].title + "</h5>");
+                colDiv.append("<h5>" + "Rating : " +gifArray[imgCnt].rating + "</h5>");
                 colDiv.append('<img src="' + gifArray[imgCnt].images.original_still.url + '"class="img-thumbnail" id="' + imgCnt + '"data-still="' + gifArray[imgCnt].images.original_still.url + '"data-animate="' + gifArray[imgCnt].images.preview_gif.url + '" data-status="still"/>');
                 $('#row' + rowIndex).append(colDiv);
             }
